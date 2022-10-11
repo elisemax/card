@@ -4,7 +4,7 @@ import CardService from '../../services/CardService';
 
 
 function App() {
-  //const cardRes = new CardService();
+  const cardRes = new CardService();
   const card = cardRes.getCardRes();
   console.log(card);
   return (
