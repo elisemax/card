@@ -1,11 +1,12 @@
 import '../../style/index.css';
 import img from '../../resources/img/testImage.jpeg';
-import SearcherService from '../../services/SearcherService';
-import TranslateService from '../../services/TranslateService';
+import CardService from '../../services/CardService';
+
 
 function App() {
-  const searcher = new SearcherService();
-  searcher.getImage('apple').then((res) => {  console.log(res);  }).catch((err) => {  console.log(err);  });
+  const cardRes = new CardService();
+  const card = cardRes.getCardRes();
+  console.log(card);
   return (
     <div>
     <section className="bg-gray-900 h-screen flex justify-center items-center gap-x-16 text-white">
